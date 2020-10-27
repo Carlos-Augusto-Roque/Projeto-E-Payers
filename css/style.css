@@ -17,20 +17,72 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: var(--font);
-    background-color: var(--background);
+body{ /*corpo da página*/
+    font-family: var(--font); /*fonte padrão quando não houver outra estilização*/
+    font-size: 16px; /*tamanho da fonte quando não houver outra estilização*/
+    background-color: var(--background); /*cor de fundo geral da página*/
 }
 
+.topo{ /*elemento pai que receberá o content*/
+    width: 100%; /*largura do topo*/
+    height: 5em; /*altura do topo (5 * 16px = 80 px => 5em;) */
+    /* background-color: azure; cor de fundo do topo */
+}
 
-@media screen and (max-width : 1199px){
+.content{ /*elemento que receberá o logo e o "menu"*/ 
+    width: 80%; /*largura do content*/
+    height: 100%; /* altura do content, que será 100% da altura do topo*/
+    max-width: 75em; /*máxima largura do content (75em; = 75*16px = 1200px*/
+    margin: auto; /*margin auto para distribuir o content ao centro do topo*/
+    /* background-color: burlywood; cor de fundo do content */
+}
+
+img{ /*logo*/
+    width: 100%; /*largura do logo*/
+}
+
+.topo img{ /*logo*/
+    max-width: 21.18em; /* máxima largura do logo (21.18em; = 21.18 * 16px = 339px)*/
+}
+
+.flex-center-bt{ /*classe para posicionamento do content*/
+    display: flex; /*permite que os elementos fiquem lado a lado*/
+    align-items: center; /*alinhamento vertical dos elementos dentro do content*/
+    justify-content: space-between; /*posicionar os elementos distribuindo os espaços entre eles*/
+}
+
+.menu{ /*área que vai receber a lista */
+    width: 100%; /*largura do menu*/
+    max-width: 50em; /*máxima largura do menu (50em; = 50 / 16px = 800px */
+}
+.menu ul{ /*lista dos itens do menu*/
+    list-style-type: none; /*remover os marcadores*/
+    display: flex; /* permite que os itens da lista fiquem lado a lado*/
+    align-items: center; /*alinhamento vertical dos elementos dentro do menu*/
+    justify-content: space-between;/*posicionar os elementos distribuindo os espaços entre eles*/
+}
+.menu ul a{ /*estilização dos itens do menu*/
+    color:#fff; /*cor da fonte*/
+    text-decoration: none; /* remover o sublinhado*/
+    font-size: 1.5em; /*tamanho da fonte (1.5 em = 1.5 * 16px = 24px) */ 
+    padding: 0.9em 0.5em; /*espaçamento interno dos itens*/
+    text-transform: uppercase; /*alterar para letras maiúsculas*/
+}
+.menu a:hover{ /*adicionar o hover nos itens do menu*/
+    background-color: var(--red); /*cor de fundo do hover,quando passar o mause sobre cada item ficará nessa cor*/
+}
+#menu-bars{ /*icone de menu que será usado em telas menores*/
+    display: none; /*oculto para esse tamanho de tela*/
+}
+
+@media screen and (max-width: 74.93em){ /*configuração tela máxima largura 74.93em; = 1199px)*/
 
 }
 
-@media screen and (max-width : 767px){
-    
+@media screen and (max-width: 47.93em){ /*configuração tela máxima largura 47.93em; = 767px)*/
+
 }
 
-@media screen and (max-width : 575px){
-    
+@media screen and (max-width: 35.93em){ /*configuração tela máxima largura 35.93em; = 575px)*/
+   
 }
