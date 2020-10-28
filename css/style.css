@@ -54,25 +54,86 @@ img{ /*logo*/
 .menu{ /*área que vai receber a lista */
     width: 100%; /*largura do menu*/
     max-width: 50em; /*máxima largura do menu (50em; = 50 / 16px = 800px */
+    
 }
 .menu ul{ /*lista dos itens do menu*/
     list-style-type: none; /*remover os marcadores*/
     display: flex; /* permite que os itens da lista fiquem lado a lado*/
     align-items: center; /*alinhamento vertical dos elementos dentro do menu*/
     justify-content: space-between;/*posicionar os elementos distribuindo os espaços entre eles*/
+
 }
 .menu ul a{ /*estilização dos itens do menu*/
     color:#fff; /*cor da fonte*/
     text-decoration: none; /* remover o sublinhado*/
-    font-size: 1.5em; /*tamanho da fonte (1.5 em = 1.5 * 16px = 24px) */ 
-    padding: 0.9em 0.5em; /*espaçamento interno dos itens*/
+    font-size: 1.2em; /*tamanho da fonte (1.5 em = 1.5 * 16px = 24px) */ 
+    padding: 0.9em 2em; /*espaçamento interno dos itens*/
     text-transform: uppercase; /*alterar para letras maiúsculas*/
+
 }
 .menu a:hover{ /*adicionar o hover nos itens do menu*/
     background-color: var(--red); /*cor de fundo do hover,quando passar o mause sobre cada item ficará nessa cor*/
+
 }
 #menu-bars{ /*icone de menu que será usado em telas menores*/
     display: none; /*oculto para esse tamanho de tela*/
+
+}
+
+.banner{ /* estilização da seção banner*/
+    width: 100%; /*largura da seção*/
+    position: relative; /*posição relativa, o banner position será posicionado em relação ao banner*/
+}
+.banner-position{ /*div criada para ficar sobre o picture para então receber os demais elementos*/
+    width: 100%; /*largura da div*/
+    height: 100%; /*altura da div*/
+    /* background-color: rgba(0, 0, 255, 0.377); */ /*cor de fundo da div*/
+    position: absolute; /*posição absoluta em relação ao banner , ou seja ficará fixa sobre a picture*/
+    top: 0; /*top 0,ficará encostado no topo*/
+}
+.banner-content{ /*div criada para receber a div do conteudo limitando-se como grid*/
+    width: 80%; /*largura da div*/
+    height: 100%; /*altura da div*/
+    /* background-color: rgba(222, 184, 135, 0.356); */ /*cor de fundo da div*/
+    margin: auto; /*margin que centralizará a div*/
+    display: flex; /* permite que os elementos se posicionem lado a lado*/
+    justify-content: flex-end; 
+}
+.banner-text{ /* div onde serão colocados o texto*/
+    width: 50%; /*largura da div */
+    height: 100%; /* altura da div*/
+    /* background-color: chartreuse; */ /*cor de fundo da div*/
+    display: flex; /* permite posicionar os elementos lado a lado*/
+    flex-direction: column; /*posiciona os elementos lado a lado em forma de coluna*/
+    justify-content: center; /*centraliza os itens verticalmente*/
+    align-items: center; /* centraliza os itens horizontalmente*/
+    color: #fff; /* cor das fontes*/
+}
+.banner-text h1{ /*título h1*/
+    font-size: 3em; /* tamanho da fonte do titulo*/
+}
+.banner-text p{ /*parágrafo*/
+    font-size: 1.5em; /*tamanho da fonte*/
+}
+.banner-text a{ /*link inscreva-se*/
+    font-size: 1.87em; /* tamanho da fonte*/
+    text-transform: uppercase; /*letra maiúscula*/
+    color: #fff; /*cor da fonte*/
+    text-decoration: none; /*sem sublinhado*/
+    background-color: var(--red); /*cor de fundo do link*/
+    padding: 0.5em 1em; /* espaçamento interno do link*/
+    border-radius: 0.5em; /*arredondamento da borda*/
+    margin-top: 1em; /*margem entre o link e o parágrafo*/
+}
+
+.jogos{ /*section criada para receber o content dos jogos*/ 
+    width: 100%; /*largura da section*/
+    height: 7.5em; /*altura da section*/
+    /* background-color: chartreuse; */ /*cor de fundo da section*/
+}
+.jogos ul{ /*links dos jogos*/
+    list-style-type: none; /*sem marcadores*/
+    width: 100%; /*largura da ul*/
 }
 
 @media screen and (max-width: 74.93em){ /*configuração tela máxima largura 74.93em; = 1199px)*/
