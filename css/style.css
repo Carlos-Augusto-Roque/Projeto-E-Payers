@@ -131,9 +131,65 @@ img{ /*logo*/
     height: 7.5em; /*altura da section*/
     /* background-color: chartreuse; */ /*cor de fundo da section*/
 }
-.jogos ul{ /*links dos jogos*/
+.jogos ul{ /* estilização dos links dos jogos*/
     list-style-type: none; /*sem marcadores*/
     width: 100%; /*largura da ul*/
+}
+
+.jogos ul a:hover img{ /*efeito especial que aumenta as imagens dos jogos quando passado o mouse em cima*/
+    transition:0.2s; /*tempo que leva para o efeito acontecer*/
+    transform: scale(1.1); /*em quanto aumenta a imagem*/ 
+}
+
+.about{ /*estilização da section principal*/
+    width: 100%; /*largura da section*/
+    height: 31.25em; /*altura da section (31.25 *16px)*/
+    background-color: var(--blue); /*cor de fundo da section*/
+    position: relative; /*posição relativa para que o about-position possa ficar sobre ele*/
+}
+
+.about-angulation{ /*estilização da div que segura a faixa preta*/
+    width: 100%; /*largura da div*/
+    height: 100%; /* altura da div*/
+    display: flex; /* permite o posicionamento dos elementos lado a lado*/
+    justify-content: center; /*posiciona os elementos centralizando na vertical*/
+    align-items: center; /*posicionamento horizontal dos elementos*/
+    /* background-color: violet; */ /*cor de fundo da div*/
+}
+
+.angulation{ /* estilização da div da faixa preta inclinada*/
+    width: 100%; /*largura da div*/
+    height: 24em; /*altura da div*/
+    background-color: #000; /*cor de fundo da div*/
+    transform: skewY(-3deg) /*inclinação da div no eixo y em -3°*/
+}
+
+.about-position{ /*estilização da div que receberá a div do conteudo do texto e da imagem*/
+    width: 100%; /*largura da div*/
+    height: 100%; /*altura da div*/
+    /* background-color: rgba(255, 0, 0, 0.397); */ /*cor de fundo da div*/
+    position: absolute; /*posicão absoluta da div, vai ficar fixada emcima da section principal*/
+    top: 0; /*encostado no topo da section*/
+}
+
+.about-text{ /*estilização da div que receberá o titulo e texto*/
+    width: 50%; /*largura da div*/
+    color: #fff; /*cor da fonte*/
+    text-align: justify; /*alinhamento do texto*/
+}
+
+.about-text h2{ /*estilização do titulo h2*/
+    font-size: 2.18em; /*tamanho da fonte*/
+    margin-bottom: 0.5em; /*espaçamento inferior*/
+}
+
+.about-text p{ /*estilização do texto*/
+    font-size: 1.125em; /*tamanho da fonte*/
+    margin-bottom: 1em; /*espaçamento inferior*/
+}
+
+.about-position img{ /*estilização da imagem*/
+    max-width: 31.87em; /*máxima largura*/
 }
 
 @media screen and (max-width: 74.93em){ /*configuração tela máxima largura 74.93em; = 1199px)*/
