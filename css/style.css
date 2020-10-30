@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 :root{
 
     --background : #000000;
@@ -130,6 +130,7 @@ img{ /*logo*/
     width: 100%; /*largura da section*/
     height: 7.5em; /*altura da section*/
     /* background-color: chartreuse; */ /*cor de fundo da section*/
+    color: #fff;
 }
 .jogos ul{ /* estilização dos links dos jogos*/
     list-style-type: none; /*sem marcadores*/
@@ -191,6 +192,67 @@ img{ /*logo*/
 .about-position img{ /*estilização da imagem*/
     max-width: 31.87em; /*máxima largura*/
 }
+
+.jogos-ao-vivo, .jogos-em-breve{
+    font-family:'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.875em; 
+    /* border-right: solid 1px #fff; */
+}
+
+.jogos-ao-vivo::after{
+    content: '';
+    height: 2.66em;
+    border:solid 1px #fff;
+    margin: 0 1em;
+}
+
+.jogos-ao-vivo h2{
+    text-align: center;
+}
+
+.jogos-em-breve{
+    text-align: center;
+}
+
+.partida{
+    width: 9.5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 1em;
+           
+}
+
+.partida img{
+    max-width: 1.8em; 
+    
+}
+
+.time1,.time2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+}
+
+.time1 img{
+    margin-left: 0.5em;
+}
+
+.time2{
+    margin-right: .5em;
+}
+
+.jogos{
+    display: flex;
+}
+
+
+    
+
+
+
 
 @media screen and (max-width: 74.93em){ /*configuração tela máxima largura 74.93em; = 1199px)*/
 
