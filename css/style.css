@@ -248,6 +248,97 @@ img{ /*logo*/
     display: flex;
 }
 
+.noticias{
+    width: 100%;
+    height: 55.12em;
+    background-color: #1E1C21;
+    display: flex;
+}
+
+.cards{
+    width: 930px;
+    height: 100%;
+    margin-left: 144px;
+    /* background-color: yellowgreen; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards img{
+    margin-top: 15px;
+    width: 237px;
+    height: 159px;
+
+}
+
+.cards p{
+    width: 237px;
+    height: 159px;
+    text-align: justify;
+    top: 0;
+    color: #fff;
+    
+}
+
+.text{
+    font-size: 16px;
+    font-family:'Roboto', sans-serif;
+    background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    margin: auto 0;
+   
+
+}
+
+.text p{
+    height: 207px;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;    
+    
+}
+
+.text span{
+    text-transform: uppercase;
+ 
+}
+
+.proximos_jogos{
+    background: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
+    width: 237px;
+    height: 750px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.jogos_futuros{
+    /* background-color: chartreuse; */
+    width: 221px;
+    height: 78px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.jogos_futuros p{
+    margin: auto;
+    color: #fff;
+}
+
+.rodape{
+    width: 100%;
+    height: 210px;
+}
+
+
+
+
+   
+
 
     
 
