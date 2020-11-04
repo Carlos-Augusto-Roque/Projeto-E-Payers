@@ -328,114 +328,73 @@ img{ /*logo*/
 }
 
 .rodape{
-    width: 100%;
-    height: 13.125em;
+    padding: 1em 0;
+    color:#fff;
 }
+.logo-rodape{
+    max-width: 18.75em;
+}
+.links-footer{
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+}
+.links h2{
+    font-size: 1.5em;
+    color: #fff;
 
-.conteudo-rodape{
-    width: 95%;
-    height: 100%;
-    /* background-color: indigo; */
-    margin: auto;
+}
+.links ul{
+    color:#fff;
+    margin-top: 0.5em;
+}
+.links li{
+    margin-left: 2em;
+}
+.links a{
+    text-decoration: none;
+    color:#fff;
+}
+.sociais{
+    width: 33%;
+
+}
+.newslatter h2{
+    font-size: 0.875em;
+    margin-bottom: 0.5em;
+}
+.newslatter form{
     display: flex;
 }
-
-.conteiner-links-uteis{
-    width: 13.125em;
-    height: 100%;
-    /* background-color: lawngreen; */
-    text-decoration: none;
+.newslatter input[type="email"]{
+    width: 12.5em;
+    height: 2.5em;
+    font-size: 1.1em;
+    padding-left: 1em;
+}
+.newslatter input[type="email"]::placeholder{
+    color: rgb(102, 102, 102);
+    font-weight: bold;
+}
+.newslatter input[type="submit"]{
+    width: 9.75em;
+    height: 2.5em;
+    font-size: 1.1em;
+    background-color:var(--red);
     color: #fff;
+    text-transform: uppercase;
 }
-
-.links_uteis{
-    margin-top: 2em;
-}
-
-.links_uteis a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.links_uteis ul{
-    /* list-style-type: none; */
-    margin-left: 1em;
+.siga-nos{
+    margin-top: 1em;
     
 }
 
-.paginas{
-    margin-top: 2em;
-    color: #fff;
-}
-
-.paginas a{
-    text-decoration: none;
-    list-style-type: none;
-    color: #fff;
-}
-
-.paginas ul{
-    /* list-style-type: none; */
-    margin-left: 1em;
-}
-
-.conteiner-paginas{
-    width: 13.125em;
-    height: 100%;
-    /* background-color:red; */
-}
-
-.conteiner-img{
-    width: 13.125em;
-    height: 100%;
-    /* background-color:blue;  */
-    padding-top: 6em;
-}
-
-.conteiner-cadastre-se{
-    /* background-color: chocolate; */
-    width: 32.625em;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
+.copyright{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
+/* página cadastro */
 
-.conteiner-cadastre-se p{
-    padding-top: 1em;
-    font-family:'Roboto', sans-serif;
-    font-size: 1em;
-    color: #fff;
-}
-
-.email{
-    display: flex;
-    background-color: #fff; 
-    padding: 0.5em 3em; 
-    border-radius: 0.5em;
-    margin-top: 1em; 
-}
-
-.email a{
-    color:#000;
-    text-decoration: none;
-}
-
-.cadastre-se{
-    display: flex;
-    background-color:var(--red); 
-    padding: 0.5em 3em; 
-    border-radius: 0.5em; 
-    margin-top: 1em;  
-}
-
-.cadastre-se a{
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-}
 
 @media screen and (max-width: 74.93em){ /*configuração tela máxima largura 74.93em; = 1199px)*/
 
