@@ -386,24 +386,155 @@ img{ /*logo*/
 }
 .siga-nos{
     margin-top: 1em;
-    
 }
 
 .copyright{
     display: flex;
     justify-content: center;
 }
+
+
 /* página cadastro */
 
+/* Resolução de 992 até 1199 (Tablet)*/
+@media screen and (max-width: 74.9375em){ /*configuração tela máxima largura 74.93em; = 1199px)*/
 
-@media screen and (max-width: 74.93em){ /*configuração tela máxima largura 74.93em; = 1199px)*/
-
-}
-
-@media screen and (max-width: 47.93em){ /*configuração tela máxima largura 47.93em; = 767px)*/
-
-}
-
-@media screen and (max-width: 35.93em){ /*configuração tela máxima largura 35.93em; = 575px)*/
+    .content{
+        max-width: 74.9375em;
+        width: 80%;
+    }
    
+    .topo img{
+        max-width: 74.9375em;
+        width: 10em;
+    }
+
+    .menu{
+        font-size: .7em;
+        margin-left:2.5em;
+    }
+
+    .about-position img{
+        max-width:74.9375em;
+        width: 40%;
+    }
+
+    .jogos-ao-vivo{
+        max-width: 74.9375em;
+        width: 15.625em;
+        font-size: 1.2em;
+    }
+
+    .jogos-em-breve{
+        max-width: 74.9375em;
+        width: 23.4375em; 
+        font-size: 1.2em;
+    }
+    
+    .rodape img{
+        width: 20%;
+    }
+
+    .siga-nos h2{
+        font-size: 90%;
+    }
+
+    .newslatter form{
+        font-size: 80%;
+    }
+
+    .newslatter h2{
+        text-align: center;
+    }
+
+    .siga-nos img{
+        width: 75%;
+    }
+
+    .noticias{
+        width: 70%;
+    }
+
+    .times p{ 
+        margin: 0.2em;
+    }
+
+}
+/* Resolução de 768 até 991 (Tablet)*/
+@media screen and (max-width: 61.9375em){ /*configuração tela máxima largura 47.93em; = 767px)*/
+
+    .content{
+        max-width: 61.9375em;
+        width: 95%;
+    }
+
+    .banner-text h1{
+        font-size: 38px;
+    }
+
+    .banner-text p{
+        font-size: 16px;
+    }
+
+    .banner-text a{
+        font-size: 16px;
+    }
+
+    .newslatter form{
+        font-size: 60%;
+    }
+
+    .about-text{
+        width: 58%;
+        
+    }
+
+    .about-text h2{
+        font-size: 25px;
+    }
+
+    .jogos-ao-vivo{
+        max-width: 61.9375em;
+        width: 12.5em;
+        font-size: 1.2em;
+    }
+
+    .jogos-ao-vivo h2{
+        font-size: 25px;
+    }
+
+    .jogos-em-breve h2{
+        font-size: 25px;
+    }
+
+    .links h2{
+        font-size: 18px;
+
+    }
+
+    .links li{
+        margin-left: 0.5em;
+        list-style-type: none;
+        
+    }
+
+    .copyright{
+        font-size: 14px;
+    }
+
+    .siga-nos{
+        font-size: 13.5px;
+    }
+
+    .noticias h2{
+        font-size: 25px;
+    }
+    .proximos-jogos h2{
+        font-size: 25px;
+    }
+}
+
+/* Resolução de 576 até 767 (Tablet)*/
+
+@media screen and (max-width: 47.9375em){ 
 }
