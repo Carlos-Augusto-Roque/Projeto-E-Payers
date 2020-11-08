@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Players</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/8ea9353849.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -18,14 +18,14 @@
                 <img src="img/logo.svg" alt="Logo E-Players">
             </a>
             <nav class="menu">
-                <ul>
+                <ul id="meusLinks">
                     <li><a href="index.html">Início</a></li>
                     <li><a href="#">Campeonatos</a></li>
                     <li><a href="#">Resultados</a></li>
                     <li><a href="#">Notícias</a></li>
                     <li><a href="#">Login/Cadastro</a></li>
                 </ul>
-                <a href="#" id="menu-bars">
+                <a class="btnMenu" onclick="meuMenu()">
                     <i class="fas fa-bars"></i>
                 </a>
             </nav>
@@ -162,7 +162,7 @@
 
                     <h2>Em <br>Breve</h2>
 
-                    <div class="partida">
+                    <div class="partida mobile_only">
 
                         <div class="time1">
 
@@ -394,8 +394,9 @@
                         <li><a href="#">Login/Cadastro</a></li>
                     </ul>
                 </nav>
-            </div><!--Links-footer-->
-            <img class="logo-rodape" src="img/logo.svg" alt="Logo E-Players" >
+            </div>
+            <!--Links-footer-->
+            <img class="logo-rodape" src="img/logo.svg" alt="Logo E-Players">
             <div class="sociais">
                 <div class="newslatter">
                     <h2>Faça parte do nosso clan, receba notícias e promoções!</h2>
@@ -406,14 +407,30 @@
                 </div>
                 <div class="siga-nos flex-center-bt">
                     <h2>Siga-nos em:</h2>
-                    <a href="https://instagram.com/seuendereço"><img src="img/instagram.png" alt="Logo do instagram"></a>
-                    <a href="https://facebook.com/carlos.etsukamoto"><img src="img/facebook.png" alt="Logo do Facebook"></a>
-                    <a href="https://youtbe.com/channel/UCaiwPGhrCCchQrbgi1Rvoww"><img src="img/youtube.png" alt="Logo do Youtube"></a>
+                    <a href="https://instagram.com/seuendereço"><img src="img/instagram.png"
+                            alt="Logo do instagram"></a>
+                    <a href="https://facebook.com/carlos.etsukamoto"><img src="img/facebook.png"
+                            alt="Logo do Facebook"></a>
+                    <a href="https://youtbe.com/channel/UCaiwPGhrCCchQrbgi1Rvoww"><img src="img/youtube.png"
+                            alt="Logo do Youtube"></a>
                 </div>
                 <p class="copyright">Todos os direitos reservados E-players</p>
-            </div><!--Fim Sociais-->
-        </div><!--Fim content footer-->
+            </div>
+            <!--Fim Sociais-->
+        </div>
+        <!--Fim content footer-->
     </footer>
+
+    <script>
+        function meuMenu() {
+            var ulDoMenu = document.getElementById("meusLinks");
+            if (ulDoMenu.style.display === "flex") {
+                ulDoMenu.style.display = "none";
+            } else {
+                ulDoMenu.style.display = "flex";
+            }
+        }
+    </script>
 
 </body>
 

@@ -56,29 +56,36 @@ img{ /*logo*/
     max-width: 50em; /*máxima largura do menu (50em; = 50 / 16px = 800px */
     
 }
-.menu ul{ /*lista dos itens do menu*/
+
+#meusLinks{ /*lista dos itens do menu*/
     list-style-type: none; /*remover os marcadores*/
     display: flex; /* permite que os itens da lista fiquem lado a lado*/
     align-items: center; /*alinhamento vertical dos elementos dentro do menu*/
     justify-content: space-between;/*posicionar os elementos distribuindo os espaços entre eles*/
-
+    
 }
+
+.btnMenu{
+    display: none;
+}
+
 .menu ul a{ /*estilização dos itens do menu*/
     color:#fff; /*cor da fonte*/
     text-decoration: none; /* remover o sublinhado*/
     font-size: 1.5em; /*tamanho da fonte (1.5 em = 1.5 * 16px = 24px) */ 
     padding: 0.9em .5em; /*espaçamento interno dos itens*/
     text-transform: uppercase; /*alterar para letras maiúsculas*/
-
 }
+
 .menu a:hover{ /*adicionar o hover nos itens do menu*/
     background-color: var(--red); /*cor de fundo do hover,quando passar o mause sobre cada item ficará nessa cor*/
-
 }
-#menu-bars{ /*icone de menu que será usado em telas menores*/
-    display: none; /*oculto para esse tamanho de tela*/
 
-}
+/* #meusLinks{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; */
+
 
 .banner{ /* estilização da seção banner*/
     width: 100%; /*largura da seção*/
@@ -461,7 +468,7 @@ img{ /*logo*/
 
 }
 /* Resolução de 768 até 991 (Tablet)*/
-@media screen and (max-width: 61.9375em){ /*configuração tela máxima largura 47.93em; = 767px)*/
+@media screen and (max-width: 61.9375em){ 
 
     .content{
         max-width: 61.9375em;
@@ -537,4 +544,64 @@ img{ /*logo*/
 /* Resolução de 576 até 767 (Tablet)*/
 
 @media screen and (max-width: 47.9375em){ 
+  
+    .btnMenu{
+        display: block;
+        color: #fff;
+      
+        width: 2em;
+    }
+
+    
+    #meusLinks{
+        display: none;
+        flex-direction: column;
+       
+        justify-content: flex-end;
+    }
+
+    .mobile_only{
+        display: none;
+    }
+
+   .proximas-partidas{
+        display: flex;
+        /* flex-direction: row; */
+   }
+
+   .bg-noticias{
+       flex-wrap: wrap;
+   }
+
+   
+   .about-text{
+       width: 60%;
+       font-size: 80%;
+   }
+
+   .about-position img{
+       width: 35%;
+   }
+
+   .jogos-ao-vivo h2{
+       font-size: 1.2em;
+       
+   }
+
+   .jogos-em-breve h2{
+       font-size: 1.2em;
+       margin-left: 1em;
+   }
+
+   .linha{
+       margin-left: 1.5em;
+   }
+
+   .jogos{
+       height: auto;
+   }
+       
+       
+       
+   
 }
