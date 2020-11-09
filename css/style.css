@@ -548,26 +548,42 @@ img{ /*logo*/
     .btnMenu{
         display: block;
         color: #fff;
-      
-        width: 2em;
+        margin-left: auto;
+        width: 4em;
     }
-
-    
+   
     #meusLinks{
         display: none;
         flex-direction: column;
-       
-        justify-content: flex-end;
+        z-index: 99;
+        width: 100%;
+        height: 350px;
+        background-color: #000;
+        justify-content: space-around;
+        position: absolute;
+        top: 70px;
+        left: 0px;
     }
 
-    .mobile_only{
+    .menu{
+        display: flex;
+    }
+
+    .menu a{
+        padding: 0.9em 0.8em;
+    }
+
+    .menu a:hover{
+        display: none;
+    }
+
+    .desktop_only{
         display: none;
     }
 
    .proximas-partidas{
         display: flex;
-        /* flex-direction: row; */
-   }
+    }
 
    .bg-noticias{
        flex-wrap: wrap;
@@ -600,8 +616,120 @@ img{ /*logo*/
    .jogos{
        height: auto;
    }
+    
+   .bg-noticias .content.flex-center-bt{
+       display: block;
+   }
        
-       
+   .flex-center-bt .wrap{
+       width: 550px;
+   }    
+   
+   .proximos-jogos{
+       margin: auto;
+       width: auto;
+   }
+
+   .noticias{
+       width: 550px;
+   }
+
+   .links{
+        top: auto;
+        font-size: 12px;
+    }
+
+   .links h2{
+       font-size: 16px;
+   }
+
+   .links-footer{
+       width: 45%;
+   }
+
+   .sociais{
+       width: 45%;
+   }
+
+   .logo-rodape{
+       display: none;
+   }
        
    
+}
+
+/*Resolução de 375 até 575 (Mobile)*/
+
+@media screen and (max-width: 35.93em){
+
+    .noticias{
+        width: 375px;
+    }
+
+    .noticias .mobile_only{
+        display: none;
+    }
+
+    .flex-center-bt .wrap{
+        width: 375px;
+    }
+
+    .about-position img{
+        display: none;
+    }
+
+    .jogos .mobile_only{
+        display: none;
+    }
+
+    .links-footer{
+        display: none;
+      
+    }
+        
+    .newscard{
+        margin:auto;
+        margin-top: .5em;
+    }
+
+ 
+    .jogos-ao-vivo{
+        margin: auto;
+        padding-top: .5em;
+    }
+
+    .about-text{
+        width: 100%;
+        margin: auto;
+    }
+
+    .banner-text h1{
+        display: none;
+    }
+
+    .banner-text p{
+        margin-left: 1em;
+        text-align: center;
+    }
+
+    .banner-text a{
+        margin-left: 1em;
+    }
+
+    .jogos img{
+        width: 80%;
+    }
+
+    .proximas-partidas{
+        margin-top: 2em;
+    }
+
+    .proximos-jogos h2{
+        margin-top: 1.5em;
+    }
+
+    .sociais{
+        margin: auto;
+        width: min-content;
+    }
 }
